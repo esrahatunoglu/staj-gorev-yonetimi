@@ -1,0 +1,50 @@
+﻿version: '3.8'
+
+services:
+  # 🧠 BACKEND (FastAPI) SERVİSİ
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/staj_db
+      - "MSSQL_URI=DRIVER={ODBC Driver 18 for SQL Server};SERVER=mssql_container;DATABASE=master;UID=sa;PWD=StajSifresi1234!;Encrypt=no;TrustServerCertificate=yes;"
+    depends_on:
+      - mongodb
+      - mssql_container
+    networks:
+      - staj_network
+
+  # 🍃 NOSQL (MongoDB) SERVİSİ
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - staj_network
+
+  # 💾 SQL (MSSQL Server) SERVİSİ
+  mssql_container:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql_container
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Staj.2026.Mssql
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    networks:
+      - staj_network
+
+volumes:
+  mongo_data:
+  mssql_data:
+
+networks:
+  staj_network:
+    driver: bridge

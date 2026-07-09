@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pymongo
+pyodbc
+bcrypt
+pydantic
