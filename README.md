@@ -38,6 +38,8 @@ Projenin amacı; kullanıcı kimlik doğrulama işlemlerini ve CRUD (Create, Rea
 
 Bu çalışma ile modern web geliştirme teknolojilerini, backend ve frontend mimarisini, veritabanı entegrasyonunu ve konteyner tabanlı uygulama geliştirme süreçlerini tanımak ve uygulamak hedeflenmiştir.
 
+Proje Durumu
+Proje, frontend, backend ve veritabanı bileşenleriyle çalışır durumdadır. Kullanıcı kimlik doğrulama ve CRUD işlemleri üzerinden veri yönetimi gerçekleştirebilmektedir.
 ## Geliştirici
 
 **Esra Nur Hatunoğlu**
