@@ -1,16 +1,48 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Staj Görev Yönetimi
 
-Currently, two official plugins are available:
+## Proje Hakkında
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Bu proje, 20 iş günlük zorunlu yaz stajım kapsamında İletişim Yazılım tarafından verilen görev doğrultusunda hazırlanmıştır.
 
-## React Compiler
+Projenin amacı; kullanıcı kimlik doğrulama işlemlerini ve CRUD (Create, Read, Update, Delete) operasyonlarını içeren bir web uygulamasının geliştirme süreçlerini deneyimlemektir.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Kullanılan Teknolojiler
 
-## Expanding the ESLint configuration
+### Backend
+- Python
+- FastAPI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React.js
+
+### Veritabanları
+- Microsoft SQL Server (MSSQL)
+- MongoDB
+
+### Altyapı
+- Docker
+- Docker Compose
+
+## Proje Kapsamı
+
+- Kullanıcı kimlik doğrulama (Authentication)
+- CRUD işlemleri
+- İlişkisel ve NoSQL veritabanı entegrasyonu
+- API geliştirme
+- Hata yönetimi
+- Responsive kullanıcı arayüzü
+- Docker ile konteynerizasyon
+
+## Projenin Amacı
+
+Bu çalışma ile modern web geliştirme teknolojilerini, backend ve frontend mimarisini, veritabanı entegrasyonunu ve konteyner tabanlı uygulama geliştirme süreçlerini tanımak ve uygulamak hedeflenmiştir.
+
+## Geliştirici
+
+**Esra Nur Hatunoğlu**
+
+Computer Engineering Student  
+Doğuş Üniversitesi
+
+GitHub: https://github.com/esrahatunoglu
